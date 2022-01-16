@@ -38,6 +38,7 @@ export default class AdminEntry extends Component {
 							localStorage.setItem('role', data.role);
 							localStorage.setItem('session_id', data.session_id);
 							localStorage.setItem('token', data.token);
+							this.props.parent.props.history.push('/admin-entry');
 							location.reload();
 				}.bind(this)).catch(SweetAlert.noop);
 			}

@@ -33,7 +33,7 @@ export default class Footer extends Component {
 	}
 	exit(){
 		let siteVer = localStorage.siteVer;
-		localStorage.clear();
+		//localStorage.clear();
 		localStorage.siteVer = siteVer;
 		location.reload();
 	}
