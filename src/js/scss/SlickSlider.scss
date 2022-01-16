@@ -1,0 +1,50 @@
+.home-page {
+	position: relative;
+
+	.social {
+		position: absolute;
+		top: 8px;
+		left: 8px;
+		z-index: 997;
+		display: none;
+		li {
+			display: inline-block;
+			&.green {
+				a {
+					background: #79d0eb !important;
+				}
+			}
+			a {
+				display: block;
+				margin: 0 4px;
+				img {
+					display: block;
+					width: 32px;
+					margin: 0 auto;
+				}
+			}
+			&:hover {
+				a {
+					border-radius: 4px;
+					transition: all 0.5s;
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 1000px) {
+	.home-page {
+		.social {
+			display: block;
+		}
+	}
+	.logo-mob {
+		text-align: center;
+		padding-top: 60px;
+		margin-bottom: 10px;
+		img {
+			width: 200px;
+		}
+	}
+}

@@ -1,0 +1,190 @@
+.staff-det-page{
+  background:$color1;
+  min-height:100vh;
+  .staff-det-page-cont{
+    max-width:1200px;
+    margin:0 auto;
+    padding-top:200px;
+    .staff-det-main-cont{
+      .right-main-cont{
+        .right-sub-cont{
+          .right-sub-img-cont{
+            width:150px;
+            margin:0 auto;
+            display:none;
+          }
+          position:relative;
+          width:80%;
+          margin:0 auto;
+          color:#fff;
+          p{
+            font-size:18px;
+          }
+
+          p:nth-child(2){
+            font-style: italic;
+          }
+          p:nth-child(3){
+            margin-top:40px;
+          }
+          p:nth-child(5){
+            margin-top:40px;
+            font-style: italic;
+          }
+          .social-main-cont{
+            text-align:right;
+            .social-cont{
+              margin-top:20px;
+              display: inline-block;
+              span{
+                margin-left:30px;
+                vertical-align:center;
+                img{
+                  width:50px;
+                  transition: transform .5s;
+                  &:hover{
+                    transform: scale(1.1);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .left-main-cont{
+        .left-sub-cont{
+          width:80%;
+          max-width:400px;
+          margin:0 auto;
+          display:block;
+        }
+      }
+    }
+    .tabs-cont{
+      color:#fff;
+      text-align: center;
+      margin-top:20px;
+      ul{
+        display:inline-block;
+        li{
+          display:inline-block;
+          padding:20px 20px;
+          font-size:22px;
+          cursor:pointer;
+          &.active{
+            background:#fff;
+            color:black;
+          }
+        }
+      }
+    }
+    .gallery-cont{
+      padding:50px 0;
+      .img-cont{
+        display:inline-block;
+        padding:0;
+        margin:0;
+        vertical-align:middle;
+        margin-bottom:5px;
+        img{
+          position:relative;
+          top:50%;
+          transform:translateY(-50%);
+          display:block;
+          margin:0 auto;
+          width: 98%;
+        }
+      }
+    }
+    .insta-cont{
+      margin-top:50px;
+      padding-bottom:100px;
+      text-align: center;
+      #instafeed{
+        display:inline-block;
+        .img-cont{
+          display:inline-block;
+          width:calc(100vw / 4);
+          height:calc(100vw / 4);
+          max-width:250px;
+          max-height:250px;
+          a{
+            img{
+              display:block;
+              width:98%;
+              height:99%;
+              object-fit: cover;
+              margin:0 auto;
+              &:hover{
+                opacity:0.7;
+              }
+            }
+          }
+        }
+      }
+      #load{
+        margin-top:30px;
+        background:transparent;
+        border:2px solid #fff;
+        padding:10px 15px;
+        color:#fff;
+        font-size:18px;
+        cursor:pointer;
+        transition: all 0.5s;
+        display: block;
+        margin: 0 auto;
+        margin-top:30px;
+        &:hover{
+          background:#fff;
+          color:black;
+        }
+      }
+    }
+  }
+
+  &.en{
+    direction:ltr;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .staff-det-page{
+    .staff-det-page-cont{
+      padding-top:120px;
+    }
+  }
+}
+@media all and (max-width: 700px) {
+  .staff-det-page{
+    .staff-det-page-cont{
+      padding-top:80px;
+      .staff-det-main-cont{
+        .col-lg-6{
+          width:100%;
+          .right-sub-cont{
+            width:70%;
+            h1{
+              font-size:22px;
+              text-align: center;
+            }
+            p{
+              font-size:16px !important;
+            }
+            .right-sub-img-cont{
+              display:block;
+            }
+            .social-main-cont{
+              text-align: center;
+              .social-cont span img{
+                width:40px;
+              }
+            }
+          }
+        }
+        .left-main-cont{
+          display:none;
+        }
+      }
+    }
+  }
+}

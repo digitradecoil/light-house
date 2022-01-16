@@ -1,0 +1,15 @@
+@import 'scss/variables';
+@import 'scss/toggle-shipping';
+
+.payment-wrapper {
+
+  border: 1px solid black;
+
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+
+  & > div {
+    border: 1px solid red;
+  }
+}

@@ -1,0 +1,87 @@
+.rich-text-editor {
+	.RichTextEditor__root___2QXK- {
+		background: transparent;
+		border-radius: 0;
+	}
+	.EditorToolbar__root___3_Aqz {
+		direction: ltr;
+		text-align: right;
+	}
+	.text-editor {
+		border: 1px solid #ddd;
+		margin-bottom: 8px;
+		.btn-group {
+			border-bottom: 1px solid #ddd;
+			background: #F1F1F1;
+			padding: 8px;
+			.btn-icon {
+				position: relative;
+				cursor: pointer;
+				width: 35px;
+				height: 35px;
+				line-height: 35px;
+				text-align: center;
+				&:before {
+
+				}
+				&.icon-format_bold{
+					&:before {
+						content: url('/src/img/system/Bold-16.png');
+					}
+				}
+				&.icon-format_italic{
+					&:before {
+						content: url('/src/img/system/Italic-16.png');
+					}
+				}
+				&.icon-format_underlined{
+					&:before {
+						content: url('/src/img/system/Underline-16.png');
+					}
+				}
+			}
+		}
+		.text-editor--field {
+			padding: 8px;
+			outline: none;
+		}
+	}
+	ul.actions {
+		text-align: right;
+		margin-top: 8px;
+		margin-right: -34px;
+		li {
+			display: inline-block;
+			&:first-child {
+				margin-left: 8px;
+			}
+			button {
+				cursor: pointer;
+				border: none;
+				padding: 4px 16px;
+				border-radius: 20px;
+				outline: none;
+				background: transparent;
+				&.button-green {
+					color: #3bbe3b;
+					border: 2px solid #3bbe3b;
+					transition: all 0.5s;
+					&:hover {
+						color: #fff;
+						background: #3bbe3b;
+						transition: all 0.5s;
+					}
+				}
+				&.button-red {
+					background: transparent;
+					border: 2px solid #cfd0d1;
+					transition: all 0.5s;
+					&:hover {
+						background: #cfd0d1;
+						transition: all 0.5s;
+					}
+				}
+			}
+		}
+	}
+}

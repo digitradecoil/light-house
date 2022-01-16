@@ -1,0 +1,132 @@
+section.banners-youtube {
+	width: 100%;
+	overflow: hidden;
+	.banners-wrapper {
+		margin: 4px -8px;
+		.wrapp {
+			padding: 8px;
+			video {
+				width: 100%;
+			}
+		}
+	}
+	.corner-contact{
+		position: fixed;
+		top: 20%;
+		z-index: 999;
+		width: 300px;
+		background: #95c11f;
+		left: -300px;
+		transition: left 0.5s;
+		&.active {
+			left: 0;
+			transition: left 0.5s;
+		}
+		button {
+			width: 100px;
+			margin: 0 auto 24px auto;
+			text-align: center;
+			border: none;
+			outline: none;
+			display: block;
+			height: 35px;
+			background: #fff;
+			border-radius: 30px;
+			cursor: pointer;
+			color: #000;
+			font-size: 16px;
+			&:hover {
+				background: #ddd;
+			}
+		}
+		.active {
+			right: -52px !important;
+		}
+		.clock {
+			position: absolute;
+			top: 52px;
+			right: -50px;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			background: #95c11f;
+			cursor: pointer;
+			img {
+				display: block;
+				width: 24px;
+				margin: 0 auto;
+				padding-top: 12px;
+			}
+		}
+		.phone {
+			position: absolute;
+			top: 0;
+			right: -50px;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			background: #95c11f;
+			cursor: pointer;
+			img {
+				display: block;
+				width: 24px;
+				margin: 0 auto;
+				padding-top: 12px;
+			}
+		}
+		.contact-wrapper{
+			padding: 24px;
+			h2 {
+				margin-top: 0;
+				margin-bottom: 16px;
+				font-size: 24px;
+				line-height: 14px;
+				text-align: center;
+			}
+			h3 {
+				font-weight: 300;
+				font-size: 28px;
+				text-align: center;
+				margin-top: 8px;
+				margin-bottom: 8px;
+				a {
+					color: #fff;
+				}
+			}
+			.time {
+				p {
+					font-size: 18px;
+					margin: 0;
+					font-weight: 700;
+				}
+				.col-lg-6 {
+					&:last-child{
+						text-align: left;
+					}
+				}
+			}
+			.bordered {
+				border: 2px solid #fff;
+				p {
+					color: #fff;
+					font-weight: bold;
+					margin: 0;
+					padding: 8px;
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 1000px) {
+	section.banners-youtube {
+		.banners-wrapper {
+			width: 100%;
+			margin: 0;
+			.col-lg-6 {
+				width: 100%;
+			}
+		}
+	}
+}

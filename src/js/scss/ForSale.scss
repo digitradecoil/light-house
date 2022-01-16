@@ -1,0 +1,142 @@
+section.sales.big-sales-wrapp {
+	.wrapper {
+		margin: 0 auto !important;
+		.wrapp {
+			border: 1px solid #eee;
+			.mask-details {
+				.actions-wrapper {
+					.actions {
+						> div {
+/* 							max-height: 35px;
+							overflow: hidden; */
+						}
+					}
+				}
+			}
+			.mask-name { 
+				div {
+					text-align: center;
+				}
+				h4 {
+					font-weight: 400;
+					color: #555;
+				    text-align: center;
+				    font-size: 24px;
+				    margin: 20px 0;
+				}
+				p {
+					font-weight: 500;
+					color: #777;
+					float: none;
+				}
+				.sales-price {
+					display: inline-block;
+				}
+				.sales-price li {
+					padding-top: 10px;
+				    width: auto;
+					display: inline-block;
+					text-align: center;
+					&.base-price {
+						color: #888;
+					}
+				}
+			}
+		}
+	}
+	h1.title {
+	    font-weight: 300;
+	    color: #888;
+	}
+	.big-sales {
+		.img {
+			max-height: 300px;
+		}
+	}
+}
+@media all and (max-width: 1250px) {
+	section.sales {
+		&.big-sales-wrapp {
+			width: 90%;
+			margin: 0 auto;
+			.big-sales {
+				width: 33.33333%;
+			}
+		}
+		.wrapper {
+			.wrapp {
+				.mask-name {
+					margin: 0;
+					.sales-price {
+						.discount-price {
+							font-size: 19px;
+						}
+						.base-price {
+							font-size: 17px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 1000px) {
+	section.sales {
+		h1.title {
+			font-size: 36px;
+			position: relative;
+			top: 5px;
+			margin: 0;
+		}
+		&.big-sales-wrapp {
+			width: 90%;
+			margin: 0 auto;
+			.big-sales {
+				width: 50%;
+				.wrapp .mask-name {
+					.sales-price {
+						.discount-price {
+							font-size: 24px;
+						}
+						.base-price {
+							font-size: 20px;
+						}
+					}
+					h4, p {
+						font-size: 24px;
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 900px) {
+	.mask-name {
+		.col-lg-4, .col-lg-8 {
+		    width: 100%;
+		}
+	}
+	section.sales{
+		.wrapp {
+			.mask-name {
+				padding: 0px 15px;
+			}
+		}
+	}
+	
+}
+@media all and (max-width: 600px) {
+	section.sales {
+		h1.title {
+			font-size: 26px;
+			font-weight: 500!important;
+			padding-bottom: 30px;
+			top: 15px;
+		}
+		&.big-sales-wrapp {			
+			.big-sales {
+				width: 100%;
+			}
+		}
+	}
+}

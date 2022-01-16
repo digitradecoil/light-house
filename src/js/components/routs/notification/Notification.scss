@@ -1,0 +1,245 @@
+.notification {
+	h1.title {
+		text-align: right;
+		font-size: 43px;
+	    font-weight: 300;
+	}
+	.navigation {
+		ul {
+			position: relative;
+			.new-message {
+				position: absolute;
+				top: 0;
+				left: 24px;
+				border: 1px solid #000;
+				border-radius: 30px;
+				padding: 0 32px;
+				background: transparent;
+				cursor: pointer;
+				height: 52px;
+				outline: none;
+				color: #000;
+				transition: background 0.5s;
+				width: 244px;
+				span {
+					position: relative;
+					top: 13px;
+					display: inline-block;
+					padding-left: 16px;
+					vertical-align: top;
+					font-size: 16px;
+				}
+				img {
+					position: relative;
+					top: -3px;
+					display: inline-block;
+					max-width: 51px;
+				}
+				&:hover {
+					background: #000;
+					color: #fff;
+					transition: background 0.5s;
+					img {
+						filter: invert(1);
+					}
+				}
+			}
+			li {
+				display: inline-block;
+				cursor: pointer;
+				padding: 0 58px 0 32px;
+				height: 50px;
+				line-height: 50px;
+				vertical-align: middle;
+				margin-right: -30px;
+				border: 1px solid #000;
+				border-radius: 30px 0 30px 0;
+				background: #fff;
+				&:first-child {
+					margin-right: 0;
+					padding-right: 32px;
+				}
+				span {
+					color: #000;
+					display: inline-block;
+					padding-right: 16px;
+					vertical-align: top;
+				}
+				img {
+					display: inline-block;
+					position: relative;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 44px;
+				}
+				&.active {
+					background: #000;
+					border: 1px solid #000;
+					span {
+						color: #fff;
+					}
+					img {
+						filter: invert(1);
+					}
+				}
+			}
+		}
+	}
+	.container {
+		min-height: 200px;
+		margin-bottom: 40px;
+		.wrapp {
+			margin: 32px 16px 0 16px;
+			padding: 50px 16px 0 16px;
+			border: 2px solid #c5c5c5;
+			position: relative;
+			&.viewed {
+				opacity: 0.7;
+			}
+			&.not-viewed {
+				h3 {
+					color: #000;
+				}
+				p {
+					color: #000;
+				}
+			}
+			&:hover {
+				&:before {
+					border-radius: 0;
+					box-shadow: none;
+					border-top: 0 solid #c5c5c5;
+					border-right: 0 solid transparent;
+					transition: all 0.5s;
+				}
+				&:after {
+					border-radius: 0;
+					box-shadow: none;
+					border-bottom: 0 solid #ffffff;
+					border-left: 0 solid transparent;
+					transition: all 0.5s;
+				}
+			}
+			&:before {
+				content: "";
+				position: absolute;
+				bottom: -2px;
+				right: -2px;
+				width: 0;
+				height: 0;
+				border-top: 40px solid #c5c5c5;
+				border-right: 40px solid transparent;
+				transition: all 0.5s;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				bottom: -2px;
+				right: -2px;
+				width: 0;
+				height: 0;
+				border-bottom: 40px solid #ffffff;
+				border-left: 40px solid transparent;
+				transition: all 0.5s;
+			}
+			.actions {
+				position: absolute;
+				z-index: 99;
+				top: 10px;
+				right: 16px;
+				p {
+					margin: 0;
+				}
+			}
+			.settings {
+				position: absolute;
+				z-index: 99;
+				cursor: pointer;
+				top: -2px;
+				left: -2px;
+				padding: 8px;
+				background: #fff;
+				img {
+					display: block;
+					width: 42px;
+				}
+			}
+			.desc {
+				min-height: 145px;
+				.max-length {
+					font-size: 18px;
+				}
+			}
+			h3 {
+				font-size: 24px;
+				font-weight: 400;
+				color: #666;
+				margin: 0;
+			}
+			p {
+				color: #666;
+				.bold {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 1250px) {
+	.notification-admin {
+		.wrapper {
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+}
+@media all and (max-width: 1000px) {
+	.notification {
+		.navigation {
+			position: relative;
+			margin-top: 60px;
+			text-align: center;
+			ul {
+				li {
+					zoom: 0.9;
+				}
+				.new-message {
+					position: absolute;
+					width: 250px;
+					top: 70px;
+					right: 0;
+					left: 0;
+					margin: 0 auto;
+					zoom: 0.9;
+				}
+			}
+		}
+		.container {
+			margin-top: 60px;
+			.col-lg-4 {
+				width: 50%;
+			}
+		}
+	}
+}
+@media all and (max-width: 800px) {
+	.notification {
+		.navigation {
+			margin-top: 80px;
+			ul {
+				li {
+					display: none;
+				}
+				.new-message {
+					top: -45px;
+				}
+			}
+		}
+		.container {
+			margin-top: 60px;
+			.col-lg-4 {
+				width: 100%;
+			}
+		}
+	}
+}

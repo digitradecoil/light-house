@@ -1,0 +1,39 @@
+$primary-color: #00deac;
+
+.order-details {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  padding-top: 16px;
+
+  & > div { margin-bottom: 16px; }
+
+  .toggle {
+    display: flex;
+
+    button {
+      flex: 1;
+      border: none;
+      padding: 16px 0;
+      font-size: 16px;
+      font-weight: bold;
+      color: $primary-color;
+      background: white;
+      &.active { color: white; background: $primary-color; }
+    }
+  }
+
+  .shipping-details {
+    display: flex;
+
+    button {
+      flex: 1;
+      border: 3px solid $primary-color;
+      padding: 13px 0;
+      font-size: 16px;
+      font-weight: bold;
+      color: $primary-color;
+      background: white;
+    }
+  }
+}

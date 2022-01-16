@@ -1,0 +1,14 @@
+section.parallax {
+	height: 400px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+@media all and (max-width: 1000px) {
+	section.parallax {
+		height: 200px;
+		background-size: cover;
+		background-position: 50% 0;
+	}
+}
